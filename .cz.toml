@@ -6,7 +6,7 @@ version = "1.0.0"
 update_changelog_on_bump = true
 
 [tool.commitizen.customize]
-message_template = "{{change_type}}:{% if show_message %} {{message}}{% endif %}"
+message_template = "{% if show_message %} {{message}}{% endif %}"
 example = "feature: this feature enable customize through config file"
 schema = "<type>: <body>"
 schema_pattern = "(feature|bug fix):(\\s.*)"
